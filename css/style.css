@@ -1,0 +1,66 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  background-size:cover;
+  font-family: Verdana, sans-serif;
+  color: white; /* add background color to see text better */
+}
+
+header {
+  background-color: rgb(150,150,150);
+  text-align: center;
+  float: none;
+  padding: 15px;
+  color: white;
+}
+
+header a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header #homeLink {
+  float: none;
+  text-decoration: none;
+}
+
+.background {
+  width: 70%;
+  background-color: rgb(180,180,180);
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.car {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.car h3 {
+  text-align: center;
+}
+
+.car img{
+  border: 2.5px solid;
+  border-color: rgb(90, 90, 90);
+  max-width: 100%;
+  height: auto;
+  width: calc(33.33% - 10px); 
+}
+
+#video {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.background #cyberpic{
+  float: right;
+  margin-top: 50px;
+  width: 50%;  
+}
