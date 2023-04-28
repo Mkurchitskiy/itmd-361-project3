@@ -28,30 +28,44 @@ header #homeLink {
 .background {
   width: 70%;
   background-color: rgb(180,180,180);
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 30px auto;
   padding: 20px;
   overflow: hidden;
 }
 
-.car {
+.background #cyberpic{
+  float: right;
+  margin-top: 50px;
+  width: 50%;  
+}
+
+.background img {
   display: block;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
 
-.car h3 {
-  text-align: center;
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.car img{
-  border: 2.5px solid;
-  border-color: rgb(90, 90, 90);
-  max-width: 100%;
-  height: auto;
-  width: calc(33.33% - 10px); 
+.controls button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.controls button:hover {
+  background-color: rgb(150, 150, 150);
 }
 
 #video {
@@ -59,8 +73,116 @@ header #homeLink {
   margin-top: 50px;
 }
 
-.background #cyberpic{
-  float: right;
-  margin-top: 50px;
-  width: 50%;  
+#map {
+  position: relative;
+  width: 95%;
+  height: 500px;
+  border: 5px solid rgb(180, 180, 180);
+  z-index: 1;
+  margin: 20px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+#map-container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .background {
+    width: 90%;
+  }
+
+  .car img {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+  }
+
+  #video {
+    margin-top: 30px;
+  }
+  
+  .background #cyberpic{
+    float: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  #map {
+    position: relative;
+    height: 400px;
+    z-index: 1;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .background {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .controls button {
+    font-size: 20px;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav a {
+    font-size: 18px;
+  }
+
+  .car img {
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+  }
+
+  .background {
+    width: 80%;
+  }
+    
+  #video {
+    margin-top: 40px;
+  }
+    
+  #map {
+    position: relative;
+    height: 450px;
+    z-index: 1;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .background {
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .controls button {
+    font-size: 24px;
+    padding: 14px;
+  }
 }
