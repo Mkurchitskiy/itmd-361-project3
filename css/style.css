@@ -46,6 +46,10 @@ header #homeLink {
   width: 25%;
 }
 
+.background h3 {
+  text-align: center;
+}
+
 .controls {
   display: flex;
   justify-content: center;
